@@ -1,4 +1,4 @@
-# Universal Doom DWeapons for VR
+# Universal Doom Weapons for VR
 
 A Doom mod that aims to add support for Doom Classic 3D VR weapons to work with popular iWad and pWad
 

@@ -1,0 +1,22 @@
+
+Actor Vanilla_ChainsawSpawner : RandomSpawner replaces AB3DPulseRifle 15101
+{
+	DropItem "Vanilla_Chainsaw"
+}
+
+Actor Vanilla_ShotgunSpawner : ShotgunSpawner replaces AB3DShotgun 15102
+{
+}
+
+Actor Vanilla_ChaingunSpawner : ChaingunSpawner replaces AB3DGrenadeLauncher 15104
+{
+}
+
+Actor Vanilla_RocketLauncherSpawner : RandomSpawner replaces AB3DRocketLauncher 15105
+{
+	DropItem "Vanilla_RocketLauncher"
+}
+
+Actor Vanilla_PlasmaRifleSpawner : PlasmaRifleSpawner replaces AB3DPlasmaGun 15103
+{
+}

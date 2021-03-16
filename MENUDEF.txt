@@ -1,0 +1,18 @@
+AddOptionMenu "OptionsMenu"
+{
+	StaticText " "
+	Submenu "3D Weapon Settings", "EDW_Settings"
+}
+
+OptionMenu "EDW_Settings" {
+	Title "3D Weapon Settings"
+	StaticText " "
+	
+	Option "Weapons mode", "evw_weapons", "E_Weapons_Option"
+	Option "Bullet Tracers", "evw_tracers", "OnOff"
+}
+
+OptionValue "E_Weapons_Option" {
+	0, "Vanilla"
+	1, "Enhanced"
+}

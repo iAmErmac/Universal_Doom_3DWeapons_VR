@@ -1,0 +1,2 @@
+server int evw_weapons = 0;
+server bool evw_tracers = false;

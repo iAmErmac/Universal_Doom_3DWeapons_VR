@@ -1,0 +1,37 @@
+ACTOR Vanilla_Shotgun : Shotgun
+{
+  	Weapon.AmmoType "Vanilla_Shell"
+	States
+	{
+	Fire:
+		SHTG A 3
+		TNT1 A 0 A_JumpIf(GetCVAR("evw_weapons")==1, "Fire.Enhanced")
+		SHTG A 0 A_FireBullets (5.6, 0, 7, 5, "BulletPuff")
+		SHTG A 0 A_PlaySound ("weapons/shotgf", CHAN_WEAPON)
+		SHTG A 7 A_GunFlash
+		SHTG BC 5
+		SHTG D 4
+		SHTG CB 5
+		SHTG A 3
+		SHTG A 7 A_ReFire
+		Goto Ready
+	Fire.Enhanced:
+		SHTG A 0 bright A_FireBullets (5.6, 0, 7, 5, "EnShotPuff")
+		SHTG A 0 A_PlaySound ("weapons/shotgun/fire", CHAN_WEAPON)
+		SHTG A 7 A_GunFlash
+		SHTG BC 5
+		SHTG D 4
+		SHTG CB 5
+		SHTG A 3
+		SHTG A 7 A_ReFire
+		TNT1 A 0 A_SpawnItemEx("WeaponSmoke",cos(pitch)*25,random(-3,-5),sin(-pitch)*25+random(38,40),		0,0,1,0)
+		Goto Ready
+	Flash:
+		TNT1 A 0 A_JumpIf(GetCVAR("evw_tracers")==false, "Flash.Vanilla")
+		TNT1 AAAAAA 0 A_FireProjectile("BulletTracer",random(-3,3),0,0,0,FPF_NOAUTOAIM,random(-1,1))
+	Flash.Vanilla:
+		SHTF A 4 Bright A_Light1
+		SHTF B 3 Bright A_Light2
+		Goto LightDone
+	}
+}

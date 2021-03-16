@@ -1,0 +1,3 @@
+ACTOR Vanilla_Fist : Fist
+{
+}

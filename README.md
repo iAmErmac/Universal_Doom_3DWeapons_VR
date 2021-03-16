@@ -1,4 +1,4 @@
-# Universal_Doom_3DWeapons_VR
+# Universal Doom Weapons for VR
 
 A Doom mod that aims to add support for Doom Classic 3D VR weapons to work with popular iWad and pWad
 
@@ -11,7 +11,7 @@ To install:
     Copy Original Doom wads into the folder.
     Copy 3D Weapons mod into the folder.
     Copy this mod into the folder.
-    Run with gzdoomvr.exe -file HDVRweapons.zip HDVRweapons_Plus_v1.0.zip
+    Run with gzdoomvr.exe -file HDVRweapons.zip LATEST_MOD_FILE_NAME
   
 OR use ZDL: https://github.com/lcferrum/qzdl/releases to config all your Doom needs.
 

@@ -43,7 +43,7 @@ This has also been adapted to work well specifically with these mods:
 
 # Credits
 
-ajantaju - for the 3D weapons mod
-Sgt Mark IV (Brutal Doom) - for enhanced effect sprites and codes
-Jekyll Grim Payne (Beautiful Doom) - for enhanced effect sprites, sounds and codes
-Ryuhi (Heretical Doom) - for wad support (filter) codes
+* ajantaju - for the 3D weapons mod
+* Sgt Mark IV (Brutal Doom) - for enhanced effect sprites and codes
+* Jekyll Grim Payne (Beautiful Doom) - for enhanced effect sprites, sounds and codes
+* Ryuhi (Heretical Doom) - for wad support (filter) codes

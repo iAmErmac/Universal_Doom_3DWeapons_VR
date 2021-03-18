@@ -1,8 +1,8 @@
 ACTOR DoomMarineGuy : DoomPlayer
 {
-	Radius 14;
-	Height 52;
-	Mass 100;
+	Radius 14
+	Height 52
+	Mass 100
 	Player.StartItem "Vanilla_Pistol"
 	Player.StartItem "Vanilla_Fist"
 	Player.StartItem "Vanilla_Chainsaw"

@@ -1,22 +1,25 @@
 
-Actor Vanilla_ChainsawSpawner : RandomSpawner replaces AB3DPulseRifle 15101
+Actor _AB3DPulseRifle : RandomSpawner replaces AB3DPulseRifle 15101
 {
 	DropItem "Vanilla_Chainsaw"
 }
 
-Actor Vanilla_ShotgunSpawner : ShotgunSpawner replaces AB3DShotgun 15102
+Actor _AB3DShotgun : RandomSpawner replaces AB3DShotgun 15102
 {
+	DropItem "Vanilla_Shotgun"
 }
 
-Actor Vanilla_ChaingunSpawner : ChaingunSpawner replaces AB3DGrenadeLauncher 15104
-{
-}
-
-Actor Vanilla_RocketLauncherSpawner : RandomSpawner replaces AB3DRocketLauncher 15105
+Actor _AB3DGrenadeLauncher : RandomSpawner replaces AB3DGrenadeLauncher 15104
 {
 	DropItem "Vanilla_RocketLauncher"
 }
 
-Actor Vanilla_PlasmaRifleSpawner : PlasmaRifleSpawner replaces AB3DPlasmaGun 15103
+Actor _AB3DRocketLauncher : RandomSpawner replaces AB3DRocketLauncher 15105
 {
+	DropItem "Vanilla_BFG9000"
+}
+
+Actor _AB3DPlasmaGun : RandomSpawner replaces AB3DPlasmaGun 15103
+{
+	DropItem "Vanilla_PlasmaRifle"
 }

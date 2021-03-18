@@ -16,7 +16,7 @@ ACTOR DoomMarineGuy : PlayerPawn
   Player.FlechetteType "ArtiPoisonBag1"
   Player.StartItem "Vanilla_Pistol"
   Player.StartItem "Vanilla_Fist"
-  Player.StartItem "Vanilla_Clip", 120
+  Player.StartItem "Clip", 120
   Player.WeaponSlot 1, Vanilla_Fist, Vanilla_Chainsaw
   Player.WeaponSlot 2, Vanilla_Pistol
   Player.WeaponSlot 3, Vanilla_Shotgun, Vanilla_SuperShotgun

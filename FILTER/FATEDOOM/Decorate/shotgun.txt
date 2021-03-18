@@ -18,12 +18,13 @@ ACTOR Vanilla_Shotgun : Shotgun
 		SHTG A 0 bright A_FireBullets (5.6, 0, 7, 5, "EnShotPuff")
 		SHTG A 0 A_PlaySound ("weapons/shotgun/fire", CHAN_WEAPON)
 		SHTG A 7 A_GunFlash
+		TNT1 A 0 A_FireProjectile("ShotgunBarrelSmoke",0,0,0,0,FPF_NOAUTOAIM,0)
 		SHTG BC 5
 		SHTG D 4
 		SHTG CB 5
 		SHTG A 3
 		SHTG A 7 A_ReFire
-		TNT1 A 0 A_SpawnItemEx("WeaponSmoke",cos(pitch)*25,random(-3,-5),sin(-pitch)*25+random(38,40),		0,0,1,0)
+		//TNT1 A 0 A_SpawnItemEx("WeaponSmoke",cos(pitch)*25,random(-3,-5),sin(-pitch)*25+random(38,40),0,0,1,0)
 		Goto Ready
 	Flash:
 		TNT1 A 0 A_JumpIf(GetCVAR("evw_tracers")==false, "Flash.Vanilla")

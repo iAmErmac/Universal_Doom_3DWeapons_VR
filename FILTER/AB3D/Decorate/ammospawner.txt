@@ -1,18 +1,40 @@
-Actor Vanilla_ClipSpawner : RandomSpawner replaces AB3DPulseRifleDrop
+Actor Vanilla_ClipSpawner : Actor replaces AB3DPulseRifleDrop
 {
-	DropItem "Vanilla_Clip"
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIfInventory("Vanilla_Chaingun", 1, "DropClip", AAPTR_PLAYER1)
+		TNT1 A 0 A_Jump(190, "DropClip")
+		TNT1 A 0 A_DropItem("Vanilla_Chaingun")
+		Stop
+	DropClip:
+		TNT1 A 0 A_DropItem("Vanilla_Clip")
+		Stop
+	}
 }
 
 Actor Vanilla_ClipBoxSpawner : RandomSpawner replaces AB3DPulseRifleAmmo 15201
 {
-	DropItem "Vanilla_Clip", 256, 9
-	DropItem "Vanilla_ClipBox", 256, 1
+	DropItem "Vanilla_Clip", 256, 15
+	DropItem "Vanilla_ClipBox", 256, 4
 	DropItem "AB3DStimpack", 256, 1
 }
 
-Actor Vanilla_ShellSpawner : RandomSpawner replaces AB3DShotgunDrop
+Actor Vanilla_ShellSpawner : Actor replaces AB3DShotgunDrop
 {
-	DropItem "Vanilla_Shell"
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIfInventory("Vanilla_SuperShotgun", 1, "DropShell", AAPTR_PLAYER1)
+		TNT1 A 0 A_Jump(215, "DropShell")
+		TNT1 A 0 A_DropItem("Vanilla_SuperShotgun")
+		Stop
+	DropShell:
+		TNT1 A 0 A_DropItem("Vanilla_Shell")
+		Stop
+	}
 }
 
 Actor Vanilla_ShellBoxSpawner : RandomSpawner replaces AB3DShotgunAmmo 15202

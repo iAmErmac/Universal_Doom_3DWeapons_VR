@@ -12,17 +12,21 @@ ACTOR Vanilla_RocketLauncher : RocketLauncher
 		Goto Ready
 	Fire.Enhanced:
 		MISG B 8 A_GunFlash
+		TNT1 A 0 A_FireProjectile("RocketBarrelSmoke",0,0,0,0,FPF_NOAUTOAIM,0)
 		MISG B 12 A_firecustommissile("BD_Rocket",0,1)
 		MISG B 0 A_ReFire
+		TNT1 A 0 A_FireProjectile("RocketBarrelSmoke2",0,0,0,0,FPF_NOAUTOAIM,0)
 		Goto Ready
 	AltFire:
 		TNT1 A 0 A_JumpIf(GetCVAR("evw_weapons")==0, "Ready") //Alt fire is available on enhanced mode only
 		MISG A 20 A_PlaySound("weapons/rlan/lock")
 		MISG A 0 A_GunFlash
+		TNT1 A 0 A_FireProjectile("RocketBarrelSmoke",0,0,0,0,FPF_NOAUTOAIM,0)
 		MISG B 8 A_firecustommissile("BD_Rocket",0,1)
 		MISG B 9
 		MISG B 15 A_WeaponReady(WRF_NOSECONDARY)
 		MISG B 8 A_ReFire
+		TNT1 A 0 A_FireProjectile("RocketBarrelSmoke2",0,0,0,0,FPF_NOAUTOAIM,0)
 		Goto Ready
 	}
 }

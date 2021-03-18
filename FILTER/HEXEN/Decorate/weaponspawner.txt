@@ -114,7 +114,7 @@ Actor AmuletOfWarding2 : AmuletOfWarding replaces AmuletOfWarding 8008
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_JumpIfInventory("Vanilla_SuperShotgun", 1, "SpawnAmulet", AAPTR_PLAYER1)
-		TNT1 A 0 A_SpawnItemEx("SuperShotgunSpawner") //Spawns only once for the first time
+		TNT1 A 0 A_SpawnItemEx("Vanilla_SuperShotgun") //Spawns only once for the first time
 	SpawnAmulet:
 		AR_4 A -1
 		Stop

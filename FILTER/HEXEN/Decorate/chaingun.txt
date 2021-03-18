@@ -1,6 +1,5 @@
 ACTOR Vanilla_Chaingun : Chaingun
 {
- 	Weapon.AmmoType "Vanilla_Clip"
 	States
 	{
 	Fire:
@@ -21,13 +20,14 @@ ACTOR Vanilla_Chaingun : Chaingun
 		CHGG B 0 A_GunFlash("Flash2")
 		CHGG B 4 A_FireBullets(5.6, 0, 1, 5, "EnBulletPuff")
 		CHGG B 0 A_ReFire
+		TNT1 A 0 A_FireProjectile("ChaingunBarrelSmoke",0,0,0,0,FPF_NOAUTOAIM,0)
 		Goto Ready
 	Flash:
 		TNT1 A 0 A_JumpIf(GetCVAR("evw_tracers")==false, "Flash.Vanilla")
-		TNT1 A 0 A_FireProjectile("BulletTracer",random(-1,1),0,0,0,FPF_NOAUTOAIM,random(-1,1))
+		TNT1 A 0 A_FireProjectile("BulletTracer",random(-1,1),0,random(-1,1),0,FPF_NOAUTOAIM,random(-1,1))
 	Flash2:
 		TNT1 A 0 A_JumpIf(GetCVAR("evw_tracers")==false, "Flash2.Vanilla")
-		TNT1 A 0 A_FireProjectile("BulletTracer",random(-1,1),0,0,0,FPF_NOAUTOAIM,random(-1,1))
+		TNT1 A 0 A_FireProjectile("BulletTracer",random(-1,1),0,random(-1,1),0,FPF_NOAUTOAIM,random(-1,1))
 	Flash.Vanilla:
 		CHGF A 4 Bright A_Light1
 		Goto LightDone

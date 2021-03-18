@@ -17,11 +17,12 @@ ACTOR Vanilla_Pistol : Pistol
 		PISG B 6 A_FireBullets(2, 0, 1, 6, "EnBulletPuff") //Enhanced hit puffs
 		PISG C 4
 		PISG B 5 A_ReFire
- 		TNT1 A 0 A_SpawnItemEx("WeaponSmoke",cos(pitch)*25,0,sin(-pitch)*25+random(33,36),		0,0,1,0)
+ 		//TNT1 A 0 A_SpawnItemEx("WeaponSmoke",cos(pitch)*25,0,sin(-pitch)*25+random(33,36),0,0,1,0)
+		TNT1 A 0 A_FireProjectile("GunBarrelSmoke",0,0,0,0,FPF_NOAUTOAIM,0)
 		Goto Ready
 	Flash:
 		TNT1 A 0 A_JumpIf(GetCVAR("evw_tracers")==false, "Flash.Vanilla")
-		TNT1 A 0 A_FireProjectile("BulletTracer",random(-1,1),0,0,0,FPF_NOAUTOAIM,random(-1,1))
+		TNT1 A 0 A_FireProjectile("BulletTracer",0,0,0,0,FPF_NOAUTOAIM,0)
 	Flash.Vanilla:
 		PISF A 7 Bright A_Light1
 		Goto LightDone

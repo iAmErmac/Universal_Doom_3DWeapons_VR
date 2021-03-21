@@ -10,9 +10,15 @@ OptionMenu "EDW_Settings" {
 	
 	Option "Weapons mode", "evw_weapons", "E_Weapons_Option"
 	Option "Bullet Tracers", "evw_tracers", "OnOff"
+	Option "Weapon switching", "evw_fastswitch", "E_WeaponSwitch_Option"
 }
 
 OptionValue "E_Weapons_Option" {
 	0, "Vanilla"
 	1, "Enhanced"
+}
+
+OptionValue "E_WeaponSwitch_Option" {
+	0, "Default"
+	1, "Fast"
 }

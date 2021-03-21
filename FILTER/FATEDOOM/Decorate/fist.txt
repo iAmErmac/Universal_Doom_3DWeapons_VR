@@ -3,6 +3,18 @@ ACTOR Vanilla_Fist : Fist
 	+WEAPON.NOALERT
 	States
 	{
+	Deselect:
+		TNT1 A 0 A_JumpIf(GetCVAR("evw_fastswitch")==0, 2)
+		PUNG A 1 A_Lower(60)
+		Loop
+		PUNG A 1 A_Lower
+		Loop
+	Select:
+		TNT1 A 0 A_JumpIf(GetCVAR("evw_fastswitch")==0, 2)
+		PUNG A 1 A_Raise(60)
+		Loop
+		PUNG A 1 A_Raise
+		Loop
 	Fire:
 		PUNG B 2
 		PUNG C 2 A_CustomPunch(20 * random(1, 1.25), TRUE, 0, "FistPuff", 65)

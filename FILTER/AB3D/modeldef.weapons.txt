@@ -176,6 +176,34 @@
 	   FrameIndex SHT2 J 0 1   FrameIndex SHT2 J 1 1
 	}
 
+	Model Vanilla_SuperShotgun
+	{ 
+	   Path "Models/Weapons/Hud/Shotgun"
+	   MODEL 0 "Shotgun_MF1.md3"
+	   SKIN 0 "MF1.png"
+	   MODEL 1 "Shotgun_MF2.md3"
+	   SKIN 1 "MF2.png"  
+	   Scale 1.0 1.0 1.0
+	   Offset -2.0 -8.0 14.0
+	   NOINTERPOLATION
+		
+	   FrameIndex SHTF A 0 0   FrameIndex SHTF A 1 0
+	}
+
+	Model Vanilla_SuperShotgun
+	{ 
+	   Path "Models/Weapons/Hud/Shotgun"
+	   MODEL 0 "Shotgun_MF1.md3"
+	   MODEL 1 "Shotgun_MF2.md3"
+	   SKIN 0 "MF1.png"
+	   SKIN 1 "MF2.png"
+	   Scale 1.0 1.0 1.0
+	   Offset 2.0 -8.0 14.0
+	   NOINTERPOLATION
+
+	   FrameIndex SHTF B 0 0   FrameIndex SHTF B 1 0
+	}
+
 
 	//SSG DONE
 

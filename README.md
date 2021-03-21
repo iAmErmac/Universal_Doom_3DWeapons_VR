@@ -1,5 +1,8 @@
 # Universal Doom Weapons for VR
 
+A GZDoom weapon mod for Doom/Heretic/Hexen/Strife/Chex by Ermac (https://www.reddit.com/user/iAmErmac)
+
+
 By design, this mod should allow the Doom 3D VR weapons working with the other map-packs and gameplay mods which don't change the monsters and weapon system too much from the vanilla Doom/Heretic/Hexen/Chex/Strife etc.
 
 There are optional bullet tracer and particle/smoke (Enhanced mode) effects for the weapons available in the **3D weapons Settings**. When enhanced mode is enabled, the Super Shotgun, Rocket Launcher, Plasma Rifle and BFG will have alt-fire enabled. In vanilla mode only BFG has alt-fire enabled (Doom beta BFG effect as alt-fire).

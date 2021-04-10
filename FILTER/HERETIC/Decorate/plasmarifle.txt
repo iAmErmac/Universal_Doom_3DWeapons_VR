@@ -44,6 +44,13 @@ ACTOR Vanilla_PlasmaRifle : PlasmaRifle
 		TNT1 A 0 A_FireProjectile("PlasmaBarrelSmoke2",0,0,0,0,FPF_NOAUTOAIM,0)
 		PLSG A 10 A_StopSoundEx (soundslot7)
 		goto Ready
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("evw_pickupmodel")==1, "Spawn.Model")
+		PLAS A 1
+		Loop
+	Spawn.Model:
+		MPLS A 1
+		Goto Spawn
 	}
 }
 

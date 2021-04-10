@@ -1,3 +1,4 @@
 server int evw_weapons = 0;
 server bool evw_tracers = false;
 server int evw_fastswitch = 0;
+server int evw_pickupmodel = 0;

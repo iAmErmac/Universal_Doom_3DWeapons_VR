@@ -9,6 +9,7 @@ OptionMenu "EDW_Settings" {
 	StaticText " "
 	
 	Option "Weapons mode", "evw_weapons", "E_Weapons_Option"
+	Option "Pickup graphics", "evw_pickupmodel", "E_PickupModel_Option"
 	Option "Bullet Tracers", "evw_tracers", "OnOff"
 	Option "Weapon switching", "evw_fastswitch", "E_WeaponSwitch_Option"
 }
@@ -21,4 +22,9 @@ OptionValue "E_Weapons_Option" {
 OptionValue "E_WeaponSwitch_Option" {
 	0, "Default"
 	1, "Fast"
+}
+
+OptionValue "E_PickupModel_Option" {
+	0, "Sprite"
+	1, "3D Model"
 }

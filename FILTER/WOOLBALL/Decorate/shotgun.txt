@@ -45,5 +45,12 @@ ACTOR Vanilla_Shotgun : Shotgun
 		SHTF A 4 Bright A_Light1
 		SHTF B 3 Bright A_Light2
 		Goto LightDone
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("evw_pickupmodel")==1, "Spawn.Model")
+		SHOT A 1
+		Loop
+	Spawn.Model:
+		MSHT A 1
+		Goto Spawn
 	}
 }

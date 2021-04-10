@@ -1,0 +1,92 @@
+
+Model Vanilla_BFG9000
+{
+   Path "Models\Weapons\Hud\BFG9000"
+   Model 0 "W-BFG.md3"
+   Skin 0 "Gbfg.pcx"
+   Scale 1.0 1.0 1.2
+
+   Rotating
+
+   FrameIndex MBFG A 0 0
+}
+
+Model Vanilla_Chaingun
+{
+   Path "Models\Weapons\Hud\Chaingun"
+   Model 0 "W-Chaingun.md3"
+   Skin 0 "Gchain.pcx"
+   Scale 1.0 1.0 1.0
+
+   zoffset -5.5
+   Rotating
+
+   FrameIndex MMGN A 0 0
+}
+
+Model Vanilla_Chainsaw
+{
+   Path "Models\Weapons\Hud\Chainsaw"
+   Model 0 "W-Chainsaw.md3"
+   Skin 0 "Gsaw.pcx"
+   Scale 1.0 1.2 1.27
+
+   zoffset -7
+   Rotating
+
+   FrameIndex MSAW A 0 0
+}
+
+Model Vanilla_PlasmaRifle
+{
+   Path "Models\Weapons\Hud\PlasmaRifle"
+   Model 0 "W-PlasmaRifle.md3"
+   Skin 0 "Gplasma.pcx"
+   Scale 0.99 1.3 1.25
+
+   zoffset -7
+   Rotating
+
+   FrameIndex MPLS A 0 0
+}
+
+Model Vanilla_RocketLauncher
+{
+   Path "Models\Weapons\Hud\RPG"
+   Model 0 "W-RocketLauncher.md3"
+   Skin 0 "Grocketlnchr.pcx"
+   Scale 1.03 1.2 1.2
+
+   zoffset -7.3
+   Rotating
+
+   FrameIndex MRPG A 0 0
+}
+
+Model Vanilla_Shotgun
+{
+   Path "Models\Weapons\Hud\Shotgun"
+   Model 0 "WShotgun_Metal.md3"
+   Model 1 "WShotgun_Wood.md3"
+   Skin 0 "WShotgun.png"
+   Skin 1 "WShotgun.png"
+   Scale 0.2 0.25 0.3
+  
+   AngleOffset 180
+   zoffset 4
+   Rotating
+
+   FrameIndex MSHT A 0 0	FrameIndex MSHT A 1 0
+}
+
+Model Vanilla_SuperShotgun
+{
+   Path "Models\Weapons\Hud\SSG"
+   Model 0 "W-SuperShotgun.md3"
+   Skin 0 "shoyt.pcx"
+   Scale 0.092 0.1 0.1
+
+   Rotating
+
+   FrameIndex MSSG A 0 0
+}

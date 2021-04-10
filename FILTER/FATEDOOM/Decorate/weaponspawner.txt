@@ -3,7 +3,7 @@ Actor Vanilla_PistolSpawner : PistolSpawner replaces RocketRifle
 {
 }
 
-Actor Vanilla_PistolSpawner2 : PistolSpawner2 replaces RocketRifleGiver 8020
+Actor Vanilla_PistolSpawner2 : PistolSpawner replaces RocketRifleGiver 8020
 {
 }
 

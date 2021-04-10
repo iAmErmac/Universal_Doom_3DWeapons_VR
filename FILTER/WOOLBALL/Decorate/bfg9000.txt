@@ -78,6 +78,13 @@ ACTOR Vanilla_BFG9000 : BFG9000
 		TNT1 A 0 A_TakeInventory("BFGRailCounter",500)
 		BFGG A 5
 		goto ready
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("evw_pickupmodel")==1, "Spawn.Model")
+		BFUG A 1
+		Loop
+	Spawn.Model:
+		MBFG A 1
+		Goto Spawn
 	}
 }
 

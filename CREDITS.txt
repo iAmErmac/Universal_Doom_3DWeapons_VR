@@ -1,0 +1,11 @@
+Universal Doom Weapons for VR
+
+A GZDoom 3D weapon mod for Doom/Heretic/Hexen/Strife/Chex by Ermac (https://www.reddit.com/user/iAmErmac)
+
+Resource credits:
+=================
+Id Software: For the amazing game, the engine and all the wonderful sprites and sounds
+ajantaju: for the 3D weapons mod
+Sgt Mark IV (Brutal Doom): for enhanced effect sprites and codes
+Jekyll Grim Payne (Beautiful Doom): for enhanced effect sprites, sounds, codes and ideas on zscript
+Ryuhi (Heretical Doom): for ideads on wad support (filter) codes

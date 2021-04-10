@@ -55,4 +55,4 @@ This has also been adapted to work well specifically with these mods:
 * ajantaju - for the 3D weapons mod
 * Sgt Mark IV (Brutal Doom) - for enhanced effect sprites and codes
 * Jekyll Grim Payne (Beautiful Doom) - for enhanced effect sprites, sounds, codes and ideas on zscript
-* Ryuhi (Heretical Doom) - for ideads on wad support (filter) codes
+* Ryuhi (Heretical Doom) - for ideas on wad support (filter) codes

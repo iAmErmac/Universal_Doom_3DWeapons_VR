@@ -6,6 +6,8 @@ By design, this mod should allow the Doom 3D VR weapons working with the other m
 
 There are optional pickup models, bullet tracer and particle/smoke (Enhanced mode) effects for the weapons available in the **3D weapons Settings**. When enhanced mode is enabled, the Super Shotgun, Rocket Launcher, Plasma Rifle and BFG will have alt-fire enabled. In vanilla mode only BFG has alt-fire enabled (Doom beta BFG effect as alt-fire).
 
+[![Download Now](https://raster.shields.io/github/downloads/iAmErmac/Universal_Doom_3DWeapons_VR/total)](https://github.com/iAmErmac/Universal_Doom_3DWeapons_VR/releases/latest)
+
 # Features
 * Optional enhanced mode. More SFX and smokes, enables alt-fire
 * Optional pickup models
